@@ -1,0 +1,76 @@
+{
+  "empresa": {
+    "nome": "Clínica Plena",
+    "telefone": "(71) 99175-9399",
+    "email": "",
+    "endereco": "Edf Alpha Medical Center, sala 913, Av. Luiz Viana Filho, 7416 - Alphaville I - Paralela, Salvador - BA, 41170-015",
+    "instagram": ""
+  },
+  "pagina": {
+    "titulo": "Ciência, cuidado e excelência para sua saúde e estética",
+    "subtitulo": "Clínica de Estética, Saúde e Bem-Estar em Salvador, com tratamentos faciais, corporais e íntimos personalizados a partir dos princípios da saúde integrativa.",
+    "avaliacoes": "4.818 avaliações no Google"
+  },
+  "secoes": {
+    "hero": {
+      "titulo": "Ciência, cuidado e excelência para sua saúde e estética",
+      "descricao": "Clínica de Estética, Saúde e Bem-Estar em Salvador, com tratamentos faciais, corporais e íntimos personalizados a partir dos princípios da saúde integrativa.",
+      "cta_principal": "Agendar pelo WhatsApp",
+      "cta_secundaria": "Ligar agora"
+    },
+    "servicos": {
+      "titulo": "Harmonização Corporal e Facial",
+      "items": [
+        {
+          "numero": "01",
+          "nome": "Harmonização Facial",
+          "desc": "Procedimentos personalizados para realçar a beleza natural e o equilíbrio dos traços do rosto."
+        },
+        {
+          "numero": "02",
+          "nome": "Harmonização Corporal",
+          "desc": "Tratamentos direcionados para contorno, firmeza e proporção corporal, respeitando o histórico de cada paciente."
+        },
+        {
+          "numero": "03",
+          "nome": "Gordura Localizada e Celulite",
+          "desc": "Protocolos de estética avançada para tratar gordura localizada e celulite com tecnologia de ponta."
+        },
+        {
+          "numero": "04",
+          "nome": "Flacidez e Estrias",
+          "desc": "Estímulo de colágeno e firmeza da pele para tratar flacidez e estrias de forma individualizada."
+        },
+        {
+          "numero": "05",
+          "nome": "Manchas, Acne e Cicatrizes",
+          "desc": "Tratamentos faciais para manchas, acne, cicatrizes e fotoenvelhecimento da pele."
+        },
+        {
+          "numero": "06",
+          "nome": "Estética Íntima Feminina",
+          "desc": "Cuidado íntimo feminino e rejuvenescimento íntimo com abordagem acolhedora e especializada."
+        },
+        {
+          "numero": "07",
+          "nome": "Reabilitação Pós-Parto",
+          "desc": "Programas de recuperação pós-parto e pós-operatório com equipe qualificada."
+        },
+        {
+          "numero": "08",
+          "nome": "Hipro - Ultrassom Micro e Macrofocado",
+          "desc": "Mais firmeza, mais contorno, mais colágeno. Tecnologia Hipro para estimular a produção de colágeno."
+        }
+      ]
+    },
+    "sobre": {
+      "titulo": "Sobre a Clínica Plena",
+      "descricao": "A Plena é uma clínica de Estética, Saúde e Bem-Estar em Salvador, especializada em oferecer tratamentos personalizados com base nos princípios da saúde integrativa. Cada paciente é avaliado de forma individualizada para que o plano de tratamento respeite seu histórico, estilo de vida e objetivos. Contamos com tecnologia de ponta e equipe qualificada para tratamentos faciais, corporais e de estética íntima feminina. Na Plena, ciência, cuidado e excelência caminham juntos para promover saúde, autoestima e bem-estar."
+    }
+  },
+  "cores": {
+    "primaria": "#8A7660",
+    "secundaria": "#5F4F3F",
+    "destaque": "#C6A15C"
+  }
+}

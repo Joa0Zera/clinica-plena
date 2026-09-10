@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Plena | Estética, Saúde e Bem-Estar em Salvador</title>
+<meta name="description" content="Clínica Plena - Harmonização Corporal e Facial em Salvador, BA. Tratamentos personalizados com base na saúde integrativa. Agende sua avaliação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo">Clínica <span>Plena</span></div>
+    <nav class="menu" id="menu-principal">
+      <a href="#hero">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-cta">
+      <a href="https://wa.me/5571991759399?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Plena" class="btn btn-primario menu-cta-desktop" target="_blank" rel="noopener">Agendar</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- BOTAO EDITAR -->
+<button id="botao-editar" class="botao-editar" onclick="abrirEditorModal()">✏️ Editar Página</button>
+
+<div id="editor-modal" class="editor-modal" style="display: none;">
+  <div class="editor-container">
+    <div class="editor-header">
+      <h2>Editar Página</h2>
+      <button onclick="fecharEditorModal()" class="fechar-modal">✕</button>
+    </div>
+    <div class="editor-form">
+      <label>Título da Página:</label>
+      <input type="text" id="edit-titulo" placeholder="Título">
+
+      <label>Subtítulo:</label>
+      <input type="text" id="edit-subtitulo" placeholder="Subtítulo">
+
+      <label>Telefone:</label>
+      <input type="text" id="edit-telefone" placeholder="Telefone">
+
+      <label>Endereço:</label>
+      <textarea id="edit-endereco" placeholder="Endereço"></textarea>
+
+      <label>Instagram:</label>
+      <input type="text" id="edit-instagram" placeholder="@usuario">
+
+      <div class="editor-buttons">
+        <button onclick="salvarEdicoes()" class="botao-salvar">💾 Salvar Alterações</button>
+        <button onclick="fecharEditorModal()" class="botao-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-texto">
+      <span class="hero-eyebrow">Estética · Saúde · Bem-Estar · Salvador, BA</span>
+      <h1 data-edit="pagina.titulo">Ciência, cuidado e excelência para sua saúde e estética</h1>
+      <p class="subheadline" data-edit="pagina.subtitulo">Clínica de Estética, Saúde e Bem-Estar em Salvador, com tratamentos faciais, corporais e íntimos personalizados a partir dos princípios da saúde integrativa.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5571991759399?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Plena" class="btn btn-primario" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a href="tel:+5571991759399" class="btn btn-secundario">Ligar agora</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num"><span class="contador" data-alvo="4818">0</span></div>
+          <div class="stat-label">Avaliações no Google</div>
+        </div>
+        <div>
+          <div class="stat-num">Alpha Mall</div>
+          <div class="stat-label">Salvador, Bahia</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-imagem-wrap reveal right">
+      <img src="./assets/imagens/image.png" alt="Equipe da Clínica Plena na recepção da clínica em Salvador">
+      <div class="hero-imagem-frame"></div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Role para descobrir</span>
+    <div class="linha"></div>
+  </div>
+</section>
+
+<!-- CREDIBILIDADE -->
+<section class="credibilidade">
+  <div class="container">
+    <div class="secao-titulo reveal">
+      <span class="eyebrow">Por que a Plena</span>
+      <h2>Motivos para confiar no seu cuidado</h2>
+      <p>Uma clínica construída sobre ciência, cuidado individualizado e tecnologia de ponta.</p>
+    </div>
+    <div class="credibilidade-grid">
+      <div class="card-cred reveal">
+        <div class="icone">★</div>
+        <div class="num"><span class="contador" data-alvo="4818">0</span></div>
+        <p>Avaliações no Google</p>
+      </div>
+      <div class="card-cred reveal">
+        <div class="icone">⚕</div>
+        <div class="num">100%</div>
+        <p>Avaliação individualizada de cada paciente</p>
+      </div>
+      <div class="card-cred reveal">
+        <div class="icone">✦</div>
+        <div class="num">Ponta</div>
+        <p>Tecnologia de ponta em todos os procedimentos</p>
+      </div>
+      <div class="card-cred reveal">
+        <div class="icone">✓</div>
+        <div class="num">Integrativa</div>
+        <p>Tratamentos baseados na saúde integrativa</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
+  <div class="container">
+    <div class="secao-titulo reveal">
+      <span class="eyebrow">Harmonização Corporal e Facial</span>
+      <h2>Nossos tratamentos</h2>
+      <p>Procedimentos faciais, corporais e de estética íntima, personalizados para o histórico e os objetivos de cada paciente.</p>
+    </div>
+    <div class="servicos-grid">
+      <div class="card-servico reveal">
+        <div class="numero">01</div>
+        <h3>Harmonização Facial</h3>
+        <p>Procedimentos personalizados para realçar a beleza natural e o equilíbrio dos traços do rosto.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">02</div>
+        <h3>Harmonização Corporal</h3>
+        <p>Tratamentos direcionados para contorno, firmeza e proporção corporal, respeitando o histórico de cada paciente.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">03</div>
+        <h3>Gordura Localizada e Celulite</h3>
+        <p>Protocolos de estética avançada para tratar gordura localizada e celulite com tecnologia de ponta.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">04</div>
+        <h3>Flacidez e Estrias</h3>
+        <p>Estímulo de colágeno e firmeza da pele para tratar flacidez e estrias de forma individualizada.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">05</div>
+        <h3>Manchas, Acne e Cicatrizes</h3>
+        <p>Tratamentos faciais para manchas, acne, cicatrizes e fotoenvelhecimento da pele.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">06</div>
+        <h3>Estética Íntima Feminina</h3>
+        <p>Cuidado íntimo feminino e rejuvenescimento íntimo com abordagem acolhedora e especializada.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">07</div>
+        <h3>Reabilitação Pós-Parto</h3>
+        <p>Programas de recuperação pós-parto e pós-operatório com equipe qualificada.</p>
+      </div>
+      <div class="card-servico reveal">
+        <div class="numero">08</div>
+        <h3>Hipro · Ultrassom Micro e Macrofocado</h3>
+        <p>Mais firmeza, mais contorno, mais colágeno. Tecnologia Hipro para estimular a produção de colágeno.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-texto reveal left">
+      <span class="eyebrow" style="color: var(--cor-destaque); font-size:13px; letter-spacing:3px; text-transform:uppercase; font-weight:600;">Sobre o atendimento</span>
+      <h2>Sobre a Clínica Plena</h2>
+      <p>A <strong>Plena</strong> é uma clínica de Estética, Saúde e Bem-Estar em Salvador, especializada em oferecer tratamentos personalizados com base nos princípios da <strong>saúde integrativa</strong>. Cada paciente é avaliado de forma individualizada para que o plano de tratamento respeite seu histórico, estilo de vida e objetivos.</p>
+      <p>Contamos com <strong>tecnologia de ponta</strong> e equipe qualificada para tratamentos faciais, corporais e de estética íntima feminina. Atuamos no tratamento de gordura localizada, flacidez, estrias, celulite, manchas, acne, cicatrizes, pós-operatório, fotoenvelhecimento, harmonização facial e corporal, rejuvenescimento íntimo e reabilitação pós-parto.</p>
+      <p>Na Plena, <strong>ciência, cuidado e excelência</strong> caminham juntos para promover saúde, autoestima e bem-estar.</p>
+    </div>
+    <div class="reveal right">
+      <div class="placeholder-img">Espaço reservado para foto real do ambiente da clínica</div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais" id="diferenciais">
+  <div class="container">
+    <div class="secao-titulo reveal">
+      <span class="eyebrow">Diferenciais</span>
+      <h2>O que torna o cuidado na Plena único</h2>
+    </div>
+    <div class="diferenciais-lista">
+      <div class="item-diferencial reveal">
+        <svg class="check-icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13"/><path d="M9 15l4 4 8-9"/></svg>
+        <span>Avaliação individualizada de cada paciente</span>
+      </div>
+      <div class="item-diferencial reveal">
+        <svg class="check-icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13"/><path d="M9 15l4 4 8-9"/></svg>
+        <span>Plano de tratamento baseado em saúde integrativa</span>
+      </div>
+      <div class="item-diferencial reveal">
+        <svg class="check-icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13"/><path d="M9 15l4 4 8-9"/></svg>
+        <span>Tecnologia de ponta em procedimentos faciais, corporais e íntimos</span>
+      </div>
+      <div class="item-diferencial reveal">
+        <svg class="check-icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13"/><path d="M9 15l4 4 8-9"/></svg>
+        <span>Equipe qualificada e multidisciplinar</span>
+      </div>
+      <div class="item-diferencial reveal">
+        <svg class="check-icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13"/><path d="M9 15l4 4 8-9"/></svg>
+        <span>Ciência, cuidado e excelência em cada atendimento</span>
+      </div>
+      <div class="item-diferencial reveal">
+        <svg class="check-icon" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13"/><path d="M9 15l4 4 8-9"/></svg>
+        <span>Mais de 4.800 avaliações positivas no Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <div class="secao-titulo reveal">
+      <span class="eyebrow">Depoimentos</span>
+      <h2>Quem já viveu a experiência Plena</h2>
+      <p>Avaliações reais de pacientes no Google.</p>
+    </div>
+    <div class="carrossel">
+      <div class="carrossel-track">
+        <div class="depoimento-card">
+          <div class="estrelas">★★★★★</div>
+          <p class="texto">"Atendimento personalizado, ambiente acolhedor e resultados maravilhosos."</p>
+          <div class="autor">Erica Isdebski</div>
+        </div>
+        <div class="depoimento-card">
+          <div class="estrelas">★★★★★</div>
+          <p class="texto">"Profissionais de excelência na técnica e no humano."</p>
+          <div class="autor">Maristela Santos</div>
+        </div>
+        <div class="depoimento-card">
+          <div class="estrelas">★★★★★</div>
+          <p class="texto">"Já fiz inúmeros procedimentos e amei todos!"</p>
+          <div class="autor">Victoria Braga</div>
+        </div>
+      </div>
+      <div class="carrossel-controles">
+        <button class="carrossel-btn prev" aria-label="Depoimento anterior">‹</button>
+        <div class="dots"></div>
+        <button class="carrossel-btn next" aria-label="Próximo depoimento">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria" id="galeria">
+  <div class="container">
+    <div class="secao-titulo reveal">
+      <span class="eyebrow">Galeria</span>
+      <h2>Nossa clínica</h2>
+      <p>Conheça um pouco do espaço e da equipe Plena.</p>
+    </div>
+    <div class="galeria-grid">
+      <div class="galeria-item reveal">
+        <img src="./assets/imagens/image.png" alt="Equipe da Clínica Plena">
+      </div>
+      <div class="galeria-item reveal">
+        <div class="placeholder-img">Espaço reservado para foto real</div>
+      </div>
+      <div class="galeria-item reveal">
+        <div class="placeholder-img">Espaço reservado para foto real</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final reveal">
+  <div class="container">
+    <h2>Agende sua avaliação individualizada</h2>
+    <p>Converse com a nossa equipe e descubra o plano de tratamento ideal para o seu histórico e seus objetivos.</p>
+    <a href="https://wa.me/5571991759399?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Plena" class="btn btn-primario" target="_blank" rel="noopener">Quero agendar minha avaliação</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="container">
+    <div class="secao-titulo reveal">
+      <span class="eyebrow">Contato</span>
+      <h2>Fale com a Clínica Plena</h2>
+    </div>
+    <div class="contato-grid">
+      <div class="contato-info reveal left">
+        <div class="info-item">
+          <div class="info-icone">📞</div>
+          <div>
+            <h4>Telefone / WhatsApp</h4>
+            <p><a href="tel:+5571991759399" data-edit="empresa.telefone">(71) 99175-9399</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icone">📍</div>
+          <div>
+            <h4>Endereço</h4>
+            <p data-edit="empresa.endereco">Edf Alpha Medical Center, sala 913, Av. Luiz Viana Filho, 7416 - Alphaville I - Paralela, Salvador - BA, 41170-015 (Alpha Mall Salvador)</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icone">🕐</div>
+          <div>
+            <h4>Horário de funcionamento</h4>
+            <p>Segunda a sexta: 09:00 – 19:00<br>Sábado: 09:00 – 13:00<br>Domingo: Fechado</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icone">✓</div>
+          <div>
+            <h4>Avaliações</h4>
+            <p>4.818 avaliações no Google</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal right">
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps?q=Cl%C3%ADnica+Plena+Edf+Alpha+Medical+Center+Av.+Luiz+Viana+Filho+7416+Alphaville+I+Paralela+Salvador+BA+41170-015&output=embed"
+            width="100%" height="400" style="border:0;"
+            allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div>
+      <h4>Clínica Plena</h4>
+      <p>Estética, Saúde e Bem-Estar em Salvador, BA. Ciência, cuidado e excelência em cada atendimento.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="tel:+5571991759399">(71) 99175-9399</a></li>
+        <li><a href="https://wa.me/5571991759399" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li>Alpha Mall Salvador, BA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Clínica Plena. Todos os direitos reservados.
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5571991759399?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Plena" class="whatsapp-flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  💬
+</a>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
